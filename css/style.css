@@ -31,6 +31,7 @@
     --breakpoint-xl: 1200px;
 
     --border-radius: 8px;
+    --border-radius-md: 28px;
     --border-radius-circle: 50rem;
 }
 
@@ -986,13 +987,14 @@ hr.custom-hr {
     text-align: center;
     background: var(--cl-four);
     backdrop-filter: blur(5px);
+    border: 1px solid var(--cl-two);
     color: var(--text-color);
     padding: 3px 15px;
-    border-radius: var(--border-radius-circle);
-    border: 1px solid var(--cl-two);
+    border-radius: var(--border-radius);
     white-space: nowrap;
     font-size: 0.65rem;
     z-index: 100;
+    box-shadow: 0 5px 15px -4px var(--dark-color);
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
@@ -1805,6 +1807,9 @@ hr.custom-hr {
 .radius {
     border-radius: var(--border-radius) !important;
 }
+.radius-md {
+    border-radius: var(--border-radius-md) !important;
+}
 .radius-bottom {
     border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
 }
@@ -1871,6 +1876,9 @@ hr.custom-hr {
 }
 .border {
     border: 2px solid transparent;
+}
+.border-0 {
+    border: 0 !important;
 }
 .border-cl-one {
     border-color: var(--cl-one) !important;
